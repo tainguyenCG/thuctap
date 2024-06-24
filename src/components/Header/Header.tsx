@@ -20,7 +20,7 @@ export default function Header() {
     queryKey: ['purchases', { status: purchasesStatus.inCart }],
     queryFn: () => purchaseApi.getPurchases({ status: purchasesStatus.inCart }),
     enabled: isAuthenticated
-  })
+  }) 
 
   const purchasesInCart = purchasesInCartData?.data.data
 
@@ -65,7 +65,7 @@ export default function Header() {
                   {purchasesInCart && purchasesInCart.length > 0 ? (
                     <div className='p-2'>
                       <div className='capitalize text-gray-400'>Sản phẩm mới thêm</div>
-                      <div className='mt-5'>
+                      <div className='mt-5'>kkk
                         {purchasesInCart.slice(0, MAX_PURCHASES).map((purchase) => (
                           <div className='mt-2 flex py-2 hover:bg-gray-100' key={purchase._id}>
                             <div className='flex-shrink-0'>

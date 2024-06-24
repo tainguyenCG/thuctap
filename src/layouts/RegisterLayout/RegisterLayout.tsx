@@ -11,10 +11,8 @@ function RegisterLayoutInner({ children }: Props) {
   console.log('RegisterLayout')
   return (
     <div>
-      <RegisterHeader />
       {children}
       <Outlet />
-      <Footer />
     </div>
   )
 }

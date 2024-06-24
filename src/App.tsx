@@ -25,7 +25,7 @@ function App() {
         {routeElements}
         <ToastContainer />
       </ErrorBoundary>
-      <ReactQueryDevtools initialIsOpen={false} />
+      
     </HelmetProvider>
   )
 }
